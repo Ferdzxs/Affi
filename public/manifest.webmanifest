@@ -1,0 +1,17 @@
+{
+  "name": "Image Prompt Studio",
+  "short_name": "ImagePrompt",
+  "description": "Turn a photo into a prompt with Gemini, then render a new image with GPT Image 1.5 or Nano Banana.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f0d0a",
+  "theme_color": "#eb8c23",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

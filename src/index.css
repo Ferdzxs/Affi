@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 22% 97%;
+    --foreground: 224 24% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 24% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 24% 12%;
+
+    --primary: 27 96% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 222 20% 94%;
+    --secondary-foreground: 224 24% 18%;
+
+    --muted: 222 18% 93%;
+    --muted-foreground: 222 10% 46%;
+
+    --accent: 36 100% 94%;
+    --accent-foreground: 27 90% 32%;
+
+    --destructive: 358 72% 53%;
+    --destructive-foreground: 0 0% 100%;
+
+    --amber: 38 92% 50%;
+    --amber-foreground: 32 40% 12%;
+
+    --border: 222 18% 88%;
+    --input: 222 18% 88%;
+    --ring: 27 96% 51%;
+
+    --radius: 0.65rem;
+  }
+}
+
+@layer base {
+  .dark {
+    --background: 30 8% 6%;
+    --foreground: 40 20% 92%;
+
+    --card: 30 8% 9%;
+    --card-foreground: 40 20% 92%;
+
+    --popover: 30 8% 9%;
+    --popover-foreground: 40 20% 92%;
+
+    --primary: 36 92% 55%;
+    --primary-foreground: 30 40% 8%;
+
+    --secondary: 30 8% 15%;
+    --secondary-foreground: 40 15% 90%;
+
+    --muted: 30 8% 13%;
+    --muted-foreground: 30 8% 58%;
+
+    --accent: 36 60% 14%;
+    --accent-foreground: 36 90% 72%;
+
+    --destructive: 358 72% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --amber: 36 92% 55%;
+    --amber-foreground: 30 40% 8%;
+
+    --border: 30 8% 18%;
+    --input: 30 8% 18%;
+    --ring: 36 92% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased transition-colors duration-200;
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 999px; }
+  .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+
+  .logo-glow {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, #ffd166 100%);
+    box-shadow: 0 0 0 1px hsl(var(--border)), 0 4px 14px -4px hsl(var(--primary) / 0.6);
+  }
+}
